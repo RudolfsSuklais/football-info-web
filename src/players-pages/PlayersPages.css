@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.players-page {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.players-page h1 {
+  font-size: 80px;
+}
+
+.players-page img {
+  height: 400px;
+}
+
+.players-page-wrapper {
+  border-top: 1px solid black;
+  margin-top: 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.players-page-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
