@@ -12,6 +12,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   padding: 0;
+  border-radius: 8px;
 }
 
 .card-container:hover {
@@ -23,8 +24,12 @@
   width: 273px;
   height: 320px;
   object-fit: scale-down;
+  transition: 1s;
 }
 
+.card-container:hover .card-image {
+  transform: translateY(-65px);
+}
 .card-content {
   display: flex;
   flex-direction: column;
@@ -43,13 +48,44 @@
   margin-bottom: 16px;
 }
 
-.card-button {
-  background-color: #ffffff;
-  color: rgb(56, 56, 56);
-  border: 2px solid rgb(56, 56, 56);
-  padding: 10px 20px;
+.card-button-dark {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #eee;
+  padding: 6px 15px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.card-button-dark a {
+  color: #eee;
+}
+
+.card-button-dark:hover {
+  background-color: #eee;
+  color: #333;
+  border: 1px solid #333;
+  letter-spacing: 1.5px;
+}
+
+.card-button-bright {
+  background-color: #eee;
+  color: #333;
+  border: 1px solid #333;
+  padding: 6px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-button-bright a {
+  color: #333;
+}
+
+.card-button-bright:hover {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #333;
+  letter-spacing: 1.5px;
 }
 
 @media (max-width: 1200px) {

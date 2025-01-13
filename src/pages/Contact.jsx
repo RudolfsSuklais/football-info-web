@@ -19,11 +19,16 @@ function Contact() {
         <div className="contact-page-form">
           <form>
             <label>Name</label>
-            <input type="text" required />
+            <input type="text" required placeholder="Your Name" />
             <label>Email</label>
-            <input type="email" required />
+            <input type="email" required placeholder="Your Email" />
             <label>Message</label>
-            <textarea rows="5" columns="50" required />
+            <textarea
+              rows="5"
+              columns="50"
+              required
+              placeholder="Your Message"
+            />
             <button type="submit">Submit</button>
           </form>
         </div>

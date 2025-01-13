@@ -5,28 +5,39 @@
   align-items: center;
   height: 100vh;
   padding: 20px;
+  background-color: #eee;
 }
 
 .about-page-headline {
   text-align: center;
   width: 100%;
   font-size: 3rem;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #333;
   margin-bottom: 20px;
+}
+
+.about-page-headline h1 {
+  color: #333;
 }
 
 .about-page-content-wrapper {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px #79d7be;
 }
 
 .about-page-who-are-we,
 .about-page-our-mission,
 .about-page-what-youll-find {
+  color: #333;
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
@@ -47,7 +58,6 @@
   margin-bottom: 10px;
 }
 
-/* Responsive media queries */
 @media (min-width: 768px) {
   .about-page-content-wrapper {
     flex-direction: row;

@@ -1,21 +1,30 @@
 import React from "react";
-import { Button, Card, Typography, Space } from "antd";
+import { Card, Typography, Space } from "antd";
 import "./BoxCard.css";
+import { Link } from "react-router-dom";
 
 const shortenDescription = (description, wordLimit = 20) => {
   const words = description.split(" ");
   if (words.length <= wordLimit) {
     return description;
   }
+
   return words.slice(0, wordLimit).join(" ") + "...";
-  console.log(words);
 };
 
-const BoxCard = ({ title, description, image, reverse, isBackground }) => (
+const BoxCard = ({
+  playerID,
+  playerName,
+  description,
+  image,
+  reverse,
+  isBackground,
+  leagueName,
+}) => (
   <Card
     hoverable
     className="card-container"
-    style={{ background: isBackground ? "#F6F4F0" : "#fff" }}
+    style={{ background: isBackground ? "#333" : "#eee" }}
   >
     <Space
       className="space-content"
@@ -28,18 +37,32 @@ const BoxCard = ({ title, description, image, reverse, isBackground }) => (
     >
       <img alt="image" src={image} className="card-image" />
       <Space direction="vertical" className="card-content">
-        <Typography.Title level={3} className="card-title">
-          {title}
+        <Typography.Title
+          level={3}
+          className="card-title"
+          style={{ color: isBackground ? "#79D7BE" : "#333" }}
+        >
+          {playerName}
         </Typography.Title>
-        <Typography.Paragraph className="card-description">
+        <Typography.Text
+          className="league-name"
+          style={{ color: isBackground ? "#79D7BE" : "#666", fontSize: "14px" }}
+        >
+          League: {leagueName}
+        </Typography.Text>
+        <Typography.Paragraph
+          className="card-description"
+          style={{ color: isBackground ? "#eee" : "#333" }}
+        >
           {shortenDescription(description)}
         </Typography.Paragraph>
-        <Button
-          className="card-button"
-          href={"/" + title.trim().replace(" ", "-")}
-        >
-          READ MORE
-        </Button>
+        <Link to={"/" + playerID}>
+          <button
+            className={isBackground ? "card-button-dark" : "card-button-bright"}
+          >
+            READ MORE
+          </button>
+        </Link>
       </Space>
     </Space>
   </Card>

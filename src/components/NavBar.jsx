@@ -81,6 +81,10 @@ function NavBar() {
               Contact
             </NavLink>
           </li>
+
+          <NavLink to="/add-player">
+            <button className="add-player-btn">Add Player</button>
+          </NavLink>
         </ul>
       </div>
     </div>
