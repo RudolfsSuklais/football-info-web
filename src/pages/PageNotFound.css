@@ -1,0 +1,35 @@
+* {
+  transition: 0.3s;
+}
+
+.page-not-found {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.page-not-found-text p {
+  font-weight: 700;
+}
+
+.page-not-found-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.page-not-found-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-not-found-btn {
+  text-decoration: none;
+  border: 2px solid black;
+}

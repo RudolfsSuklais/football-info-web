@@ -1,0 +1,79 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.about-page-headline {
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.about-page-content-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-page-who-are-we,
+.about-page-our-mission,
+.about-page-what-youll-find {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-page-who-are-we h2,
+.about-page-our-mission h2,
+.about-page-what-youll-find h2 {
+  margin-bottom: 10px;
+}
+
+.about-page-content-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-page-content-wrapper li {
+  margin-bottom: 10px;
+}
+
+/* Responsive media queries */
+@media (min-width: 768px) {
+  .about-page-content-wrapper {
+    flex-direction: row;
+  }
+
+  .about-page-who-are-we,
+  .about-page-our-mission,
+  .about-page-what-youll-find {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-page-headline {
+    margin-top: 40px;
+    font-size: 3.5rem;
+  }
+
+  .about-page-content-wrapper {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page-headline {
+    margin-top: 440px;
+    font-size: 2.5rem;
+  }
+}

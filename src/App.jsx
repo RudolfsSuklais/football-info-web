@@ -14,6 +14,11 @@ import CristianoRonaldo from "./players-pages/CristianoRonaldo";
 import LionelMessi from "./players-pages/LionelMessi";
 import PageNotFound from "./pages/PageNotFound";
 import Neymar from "./players-pages/Neymar";
+import ZlatanIbrahimović from "./players-pages/ZlatanIbrahimović";
+import WayneRooney from "./players-pages/WayneRooney";
+import Pedro from "./players-pages/Pedro";
+import JuanMata from "./players-pages/JuanMata";
+import RaheemSterling from "./players-pages/RaheemSterling";
 
 function App() {
   return (
@@ -29,6 +34,11 @@ function App() {
         <Route path="/cristiano-ronaldo" element={<CristianoRonaldo />} />
         <Route path="/lionel-messi" element={<LionelMessi />} />
         <Route path="/neymar" element={<Neymar />} />
+        <Route path="/zlatan-ibrahimović" element={<ZlatanIbrahimović />} />
+        <Route path="/pedro" element={<Pedro />} />
+        <Route path="/wayne-rooney" element={<WayneRooney />} />
+        <Route path="/juan-mata" element={<JuanMata />} />
+        <Route path="/raheem-sterling" element={<RaheemSterling />} />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
       <Footer />

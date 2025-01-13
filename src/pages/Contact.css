@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.contact-page-headline {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.contact-page-content-wrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page-text {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-page-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-page-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-page-form input,
+.contact-page-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-page-form input:focus,
+.contact-page-form textarea:focus {
+  border-color: #2e5077;
+  box-shadow: 0 0 5px rgba(0, 180, 207, 0.5);
+  outline: none;
+}
+
+.contact-page-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-page-form button:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+  color: #79d7be;
+}
+
+.contact-page-form button:active {
+  background-color: #0b0b0b;
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-page-headline {
+    font-size: 1.8rem;
+  }
+
+  .contact-page-content-wrapper {
+    padding: 15px;
+  }
+
+  .contact-page-form input,
+  .contact-page-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-page-form button {
+    font-size: 0.9rem;
+  }
+}

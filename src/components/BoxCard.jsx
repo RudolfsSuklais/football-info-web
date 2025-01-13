@@ -8,13 +8,14 @@ const shortenDescription = (description, wordLimit = 20) => {
     return description;
   }
   return words.slice(0, wordLimit).join(" ") + "...";
+  console.log(words);
 };
 
 const BoxCard = ({ title, description, image, reverse, isBackground }) => (
   <Card
     hoverable
     className="card-container"
-    style={{ background: isBackground ? "#aaaaaa" : "#fff" }}
+    style={{ background: isBackground ? "#F6F4F0" : "#fff" }}
   >
     <Space
       className="space-content"

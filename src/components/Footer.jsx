@@ -6,9 +6,9 @@ function Footer() {
   return (
     <footer>
       <div className="footer-content">
-        <div className="logo">
+        <div className="footer-logo">
           <NavLink to="/">
-            <img src="https://pngimg.com/d/fifa_PNG28.png" alt="FIFA LOGO" />
+            <h1>FOOTBALL HERO</h1>
           </NavLink>
         </div>
 

@@ -13,7 +13,7 @@ function NavBar() {
     <div className="nav-bar">
       <div className="nav-bar-logo">
         <NavLink to="/">
-          <img src="https://pngimg.com/d/fifa_PNG28.png" alt="FIFA LOGO" />
+          <h1>FOOTBALL HERO</h1>
         </NavLink>
       </div>
 
